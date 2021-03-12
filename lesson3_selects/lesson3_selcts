@@ -1,0 +1,21 @@
+insert into products values(null, "intel", "Intel core i5", 10000, sysdate(), sysdate(), 10),
+(null, "intel", "Intel core i7", 10000, sysdate(), sysdate(), 10),
+(null, "amd", "ryzen 5", 5000, sysdate(), sysdate(), 10),
+(null, "mikron", "i4", 7000, sysdate(), sysdate(), 10),
+(null, "gtx1060", "gtx 1060 6gb", 25000, sysdate(), sysdate(), 10);*/
+/*truncate test;
+create table if not exists test (data varchar(100));
+insert into test values('2021-03-11 21:40:34'),
+('1998-05-22 21:40:34'),
+('2001-07-15 21:40:34');*/
+
+#select (to_days(now()) - to_days(data))  / 365.25  from test ;
+#select concat(name, ' ', description) from products
+#alter table test modify data datetime; 
+#alter table test change data date_ datetime;
+/*insert into storehouses_products values(null, 11, 7, 1),
+(null, 11, 7, 2),
+(null, 11, 7, 1),
+(null, 11, 7, 0),
+(null, 11, 7, 6);*/
+select * from storehouses_products order by value ;
